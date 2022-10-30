@@ -25,9 +25,6 @@
         text-decoration: underline;
       }
       img {
-        max-width: 100%;
-        border: 14px inset #da77d6;
-        border-radius: 20px;
       }
 
       h3 {
@@ -84,46 +81,41 @@
       }
 
       .container {
-        max-width: 600px;
+        max-width: 725px;
         background: palevioletred;
         margin: 20px auto;
         padding: 20px;
         border-radius: 10px;
       }
 
-      .chicks {
+      .ice-cream {
+        max-width: 100%;
         border-radius: 10px;
         transition: all opacity 150ms ease-in-out;
       }
 
-      .chicks:hover {
+      .ice-cream:hover {
         filter: contrast(40%);
         transform: scale(1.1);
       }
 
-      .cardies {
-        transition: all opacity 3000ms ease-in-out;
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 4px;
+        margin: 15px 0;
       }
 
-      .cardies:hover {
-        filter: hue-rotate(217deg);
-        transform: rotateZ(90deg);
+      .grid img {
+        width: 90%;
+        border-radius: 8px;
+        object-fit: cover;
+        transition: all opacity 150ms ease-in-out;
       }
 
-      .cactus {
-        transition: all opacity 900ms ease-in-out;
-      }
-
-      .cactus:hover {
-        filter: brightness(167%) hue-rotate(299deg) invert(30%) saturate(300%);
-      }
-
-      .hat {
-        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
-      }
-      .hat:hover {
-        transform: rotateX(65deg) rotateY(150deg) rotateZ(163deg)
-          scale(1.72, 1.85);
+      .grid img:hover {
+        filter: contrast(80%);
+        transform: scale(2);
       }
 
       .youtube-link {
@@ -143,25 +135,32 @@
       <h2>My Hobby</h2>
 
       <img
-        src="https://tse4.mm.bing.net/th?id=OIP.ggI09uup64BVyfG7NgOPsQHaLG&pid=Api&P=0"
-        alt="chicks"
-        class="chicks"
+        src="https://i0.wp.com/spinayarncrochet.com/wp-content/uploads/2017/07/20347996_10159117167140437_1939920085_o.jpg?fit=1333%2C1334&ssl=1"
+        alt="icecream"
+        width="100%"
+        class="ice-cream"
       />
-      <img
-        src="https://tse3.mm.bing.net/th?id=OIP.tj-sx3iLvs6h9Di6SVDhKwHaFk&pid=Api&P=0"
-        alt="cardies"
-        class="cardies"
-      />
-      <img
-        src="https://tse4.mm.bing.net/th?id=OIP.HshHqulI83x4UvNGNPBOAAHaFj&pid=Api&P=0"
-        alt="cactus"
-        class="cactus"
-      />
-      <img
-        src="https://tse4.mm.bing.net/th?id=OIP.uR3oCo19Hwbuh4FN-3vu0QHaJ3&pid=Api&P=0"
-        alt="hat"
-        class="hat"
-      />
+      <div class="grid">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUhgcPeXsN6-JkbZnIEC-fvJ_Qk3NGUDnqrg&usqp=CAU"
+          alt="bees"
+        />
+
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQoA2aJwHUvtB0WRAFy8Og8fqri5PNAcjsAg&usqp=CAU"
+          alt="mandala blanket"
+        />
+
+        <img
+          src="https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/at%2Fliving%2F2022-05%2Fcrochet%20patterns%2Fmushrooms"
+          alt="mushrooms"
+        />
+
+        <img
+          src="https://www.mamainastitch.com/wp-content/uploads/2020/01/Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Copy-of-Template-10-600x900-1-1-600x643.png"
+          alt="blankets"
+        />
+      </div>
       <h3>What are the benefits of crocheting?</h3>
 
       <ul>
