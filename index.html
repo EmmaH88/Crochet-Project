@@ -25,7 +25,9 @@
         text-decoration: underline;
       }
       img {
-        max-width: 100;
+        max-width: 100%;
+        border: 14px inset #da77d6;
+        border-radius: 20px;
       }
 
       h3 {
@@ -43,6 +45,7 @@
       }
 
       button {
+        background: #da77d6;
         display: block;
         margin: 30px auto;
         border: 1px solid lightcoral;
@@ -62,12 +65,65 @@
         font-size: 15px;
       }
 
+      .dark-theme-button {
+        color: black;
+        background: darkmagenta;
+        display: block;
+        margin: 30px auto;
+        border: 3px solid darkorchid;
+        font-size: 20px;
+        border-radius: 5px;
+        padding: 10px 15px;
+        transition: all 150ms ease-in-out;
+      }
+
+      .dark-theme-button:hover {
+        color: lightslategrey;
+        background: lightpink;
+        border: 3px solid lightcoral;
+      }
+
       .container {
         max-width: 600px;
         background: palevioletred;
         margin: 20px auto;
         padding: 20px;
         border-radius: 10px;
+      }
+
+      .chicks {
+        border-radius: 10px;
+        transition: all opacity 150ms ease-in-out;
+      }
+
+      .chicks:hover {
+        filter: contrast(40%);
+        transform: scale(1.1);
+      }
+
+      .cardies {
+        transition: all opacity 3000ms ease-in-out;
+      }
+
+      .cardies:hover {
+        filter: hue-rotate(217deg);
+        transform: rotateZ(90deg);
+      }
+
+      .cactus {
+        transition: all opacity 900ms ease-in-out;
+      }
+
+      .cactus:hover {
+        filter: brightness(167%) hue-rotate(299deg) invert(30%) saturate(300%);
+      }
+
+      .hat {
+        transition: cubic-bezier(0.165, 0.84, 0.44, 1);
+      }
+      .hat:hover {
+        transform: rotateX(65deg) rotateY(150deg) rotateZ(163deg)
+          scale(1.72, 1.85);
       }
 
       .youtube-link {
@@ -80,6 +136,7 @@
     </style>
   </head>
   <body>
+    <button class="dark-theme-button">Dark Theme</button>
     <div class="container">
       <h1>Crochet</h1>
 
@@ -88,18 +145,22 @@
       <img
         src="https://tse4.mm.bing.net/th?id=OIP.ggI09uup64BVyfG7NgOPsQHaLG&pid=Api&P=0"
         alt="chicks"
+        class="chicks"
       />
       <img
         src="https://tse3.mm.bing.net/th?id=OIP.tj-sx3iLvs6h9Di6SVDhKwHaFk&pid=Api&P=0"
         alt="cardies"
+        class="cardies"
       />
       <img
         src="https://tse4.mm.bing.net/th?id=OIP.HshHqulI83x4UvNGNPBOAAHaFj&pid=Api&P=0"
         alt="cactus"
+        class="cactus"
       />
       <img
         src="https://tse4.mm.bing.net/th?id=OIP.uR3oCo19Hwbuh4FN-3vu0QHaJ3&pid=Api&P=0"
         alt="hat"
+        class="hat"
       />
       <h3>What are the benefits of crocheting?</h3>
 
